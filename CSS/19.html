@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滤镜</title>
+    <script>
+        function handlechange(obj) {
+            with (obj.filters(0)) {
+                if (strength < 255) {
+                    strength += 2;
+                    direction += 45;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<p>
+    <img id="img1" onfilterchange=handlechange(this) src="20140723214632.jpg" style="filter: wave(strength=1)">
+</p>
+</body>
+</html>
