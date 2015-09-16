@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script language="JavaScript">
+        function check() {
+            if (document.test1.txt.value == "") {
+                alert("不允许为空");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+<form name="test1" action="01.html" onsubmit="return check()">
+    <input type="text" name="txt">
+    <input type="submit" value="ok">
+</form>
+</body>
+</html>
