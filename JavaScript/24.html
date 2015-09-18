@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<img src="../HTML/psb%20(1).jpg" onclick="alert(this.src);">
+<form>
+    <input type="text" name="ddd" value="ddaaa" onclick="checkit(this)"> <!--this->input-->
+</form>
+</body>
+</html>
+<script>
+    function checkit(obj) {
+        if (obj.value == "") {
+            alert("空值");
+        }
+        else {
+            alert(obj.value);
+        }
+    }
+</script>
